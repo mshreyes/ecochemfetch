@@ -138,6 +138,8 @@ print("Total Synonyms    :", info["total_synonyms_count"])
 
 ---
 
+ ## CSV Output Schema 
+
 | Field Name | Type | Description |
 | :--- | :--- | :--- |
 | `query` | `string` | Query chemical name submitted |
