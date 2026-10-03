@@ -1,9 +1,6 @@
-```markdown
 # ecochemfetch
 
 A zero-key, open-source Python package to fetch comprehensive chemical identifiers, structural properties, CACTVS fingerprints, toxicology profiles, environmental fate metrics, regulatory codes, and mass spectra records directly into CSV files.
-
-```
 
 ---
 
