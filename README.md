@@ -89,36 +89,6 @@ ecochemfetch/
 
 ```
 
-### `pyproject.toml`
-
-```toml
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "ecochemfetch"
-version = "0.1.0"
-description = "Comprehensive chemical identifiers, exhaustive synonyms, and environmental regulatory data fetcher."
-readme = "README.md"
-authors = [{ name = "Your Name" }]
-license = { text = "MIT" }
-dependencies = [
-    "requests>=2.28.0"
-]
-requires-python = ">=3.9"
-
-```
-
-### `src/ecochemfetch/__init__.py`
-
-```python
-from .client import fetch_chemical_info, fetch_chemicals_to_csv
-
-__all__ = ["fetch_chemical_info", "fetch_chemicals_to_csv"]
-
-```
-
 ---
 
 ## Usage
