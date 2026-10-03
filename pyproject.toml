@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecochemfetch"
+version = "0.1.0"
+description = "Comprehensive chemical identifiers, environmental fate, toxicology, and regulatory data fetcher."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+keywords = [
+    "chemistry",
+    "cheminformatics",
+    "environmental-chemistry",
+    "toxicology",
+    "pubchem",
+    "regulatory",
+    "pesticides",
+    "pfas"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "requests>=2.28.0",
+    "urllib3>=1.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+ecochem = "ecochem.client:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ecochem"
+Issues = "https://github.com/yourusername/ecochem/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
