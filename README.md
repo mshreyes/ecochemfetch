@@ -76,21 +76,6 @@ pip install -e .
 
 ---
 
-## Project Structure
-
-```text
-ecochemfetch/
-├── pyproject.toml
-├── README.md
-└── src/
-    └── ecochemfetch/
-        ├── __init__.py
-        └── client.py
-
-```
-
----
-
 ## Usage
 
 ### 1. Batch Export to CSV
